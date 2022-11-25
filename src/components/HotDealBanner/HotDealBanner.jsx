@@ -7,11 +7,11 @@ const HotDealBanner = () => {
     const products = useContext(ProductsContext);
 
     return (
-        <div className='flex justify-between items-center mt-16'>
+        <div className='flex flex-col lg:flex-row justify-between items-center mt-16'>
             <div>
                 <p className='text-8xl'>We picked <br />some <span className='text-[#FFAE5D]'>cool <br />things</span>  for <br />you!</p>
             </div>
-            <div className='w-[878px]'>
+            <div className='w-full lg:w-[878px] mt-10 '>
                 {/* <h3 className='text-2xl border-dashed border-b-2 border-[#FFAE5D] pb-3'>hot deals for you</h3> */}
                 <Heading>hot deals for you</Heading>
                 <div className=' px-4  rounded-2xl'>

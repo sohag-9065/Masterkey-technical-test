@@ -11,7 +11,7 @@ const ReviewSection = () => {
             name: "2021 Apple iPad Pro with Apple M1 chip (12.9-inch/32.77 cm, Wi-Fi, 128GB)",
             price: "₹99,900.00",
             details: "you bought it at the best price"
-            
+
         },
         {
             img: ph2,
@@ -21,10 +21,10 @@ const ReviewSection = () => {
         }
     ]
     return (
-        <div className='mt-16'>
+        <div className='mt-16 '>
             <Heading>Review your purchase</Heading>
-            <div>
-            <div className='grid grid-cols-1 lg:grid-cols-2  gap-4 lg:gap-10 justify-center items-center justify-items-center mx-auto mt-7'>
+            <div className='h-96'>
+                <div className='grid grid-cols-1 lg:grid-cols-2  gap-4 lg:gap-5 justify-center items-center justify-items-center mx-auto mt-7 '>
                     {
                         reviews.map((review, index) => <ReviewCard
                             key={index}
@@ -32,7 +32,7 @@ const ReviewSection = () => {
                         >
                         </ReviewCard>)
                     }
-                    
+
                 </div>
             </div>
         </div>

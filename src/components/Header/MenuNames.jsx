@@ -19,10 +19,11 @@ const MenuNames = () => {
         "Bags",
     ]
     return (
-        <div className='flex justify-between px-4' >
+        <div className='flex flex-wrap justify-between px-4 ' >
             {
                menuItems.map((menu, index) => <p
                key={index}
+               className="pr-4"
                >{menu}</p> 
                ) 
             }
