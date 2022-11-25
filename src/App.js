@@ -26,7 +26,7 @@ function App() {
   return (
     <ProductsContext.Provider value={products}>
       <div>
-        <div className='max-w-screen-2xl mx-auto '>
+        <div className='max-w-screen-2xl mx-auto px-6 '>
           <Header />
           <HotDealBanner />
           <Alexabanner />
@@ -35,9 +35,10 @@ function App() {
           <SpecialBanner />
           <DealsSection />
           <ReviewSection />
+          
         </div>
         <div className='bg-[#404040]  py-16 mt-28'>
-          <FooterSection />
+        <FooterSection />
         </div>
       </div>
     </ProductsContext.Provider>

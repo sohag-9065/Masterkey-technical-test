@@ -4,7 +4,7 @@ const ReviewCard = ({ review }) => {
     const { name, price, details, img } = review;
     const ratings = [1, 2, 3, 4, 5];
     return (
-        <div className="card justify-between card-side border-2 border-slate-200  w-full">
+        <div className="flex flex-col lg:flex-row justify-between card-side border-2 border-slate-200  w-full">
             <figure><img src={img} alt="Movie" className='h-80 w-80' /></figure>
             <div className="card-body justify-end max-w-[300px] my-14">
                 <h2 className="font-semibold text-2xl">{name}</h2>
