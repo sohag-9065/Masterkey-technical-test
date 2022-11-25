@@ -3,6 +3,9 @@ import Header from './components/Header/Header';
 import HotDealBanner from './components/HotDealBanner/HotDealBanner';
 import { useEffect, useState } from 'react';
 import { createContext } from 'react';
+import Alexabanner from './components/Alexabanner/Alexabanner';
+import TodayDeal from './components/TodayDeal/TodayDeal';
+import SearchItem from './components/SearchItem/SearchItem';
 
 export const ProductsContext = createContext([])
 
@@ -21,6 +24,9 @@ function App() {
       <div className='max-w-screen-2xl mx-auto '>
         <Header />
         <HotDealBanner />
+        <Alexabanner />
+        <TodayDeal />
+        <SearchItem />
       </div>
     </ProductsContext.Provider>
 

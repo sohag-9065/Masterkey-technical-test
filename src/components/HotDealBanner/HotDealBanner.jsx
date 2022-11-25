@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { ProductsContext } from '../../App';
+import Heading from '../shared/Heading';
 import HotDealCard from './HotDealCard';
 
 const HotDealBanner = () => {
@@ -11,7 +12,8 @@ const HotDealBanner = () => {
                 <p className='text-8xl'>We picked <br />some <span className='text-[#FFAE5D]'>cool <br />things</span>  for <br />you!</p>
             </div>
             <div className='w-[878px]'>
-                <h3 className='text-2xl border-dashed border-b-2 border-[#FFAE5D] pb-3'>hot deals for you</h3>
+                {/* <h3 className='text-2xl border-dashed border-b-2 border-[#FFAE5D] pb-3'>hot deals for you</h3> */}
+                <Heading>hot deals for you</Heading>
                 <div className=' px-4  rounded-2xl'>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 lg:gap-10 justify-center items-center justify-items-center mx-auto mt-5'>
                         {
