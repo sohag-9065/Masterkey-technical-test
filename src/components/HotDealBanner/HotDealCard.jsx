@@ -12,7 +12,7 @@ const HotDealCard = ({product}) => {
                     {name}
                 </h2>
                 <div className="card-actions justify-between">
-                    <div className="">${price}</div>
+                    <div className="">₹{price}</div>
                     <div className="text-[#FF3232]">
                         <p>-{discount}% off</p>
                     </div>

@@ -17,13 +17,7 @@ const TodayDeal = () => {
                         >
                         </HotDealCard>)
                     }
-                    {/* {
-                            products.slice(products.length-5,products.length).map((product) => <HotDealCard
-                                key={product._id}
-                                product={product}
-                            >
-                            </HotDealCard>)
-                        } */}
+                    
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@ const SearchNav = () => {
                 </div>
             </div>
             <div className="flex-none">
-                <div className=" flex justify-between items-center  rounded-2xl border pr-2 w-[622px]">
+                <div className=" flex justify-between items-center  rounded-2xl border pr-2 xl:w-[622px]">
                     <input type="text" placeholder="Search" className="input  rounded-2xl" />
                     <FaSearch />
             

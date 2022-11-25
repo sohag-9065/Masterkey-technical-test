@@ -9,6 +9,7 @@ import SearchItem from './components/SearchItem/SearchItem';
 import SpecialBanner from './components/SpecialBanner/SpecialBanner';
 import DealsSection from './components/DealsSection/DealsSection';
 import FooterSection from './components/FooterSection/FooterSection';
+import ReviewSection from './components/ReviewSection/ReviewSection';
 
 export const ProductsContext = createContext([])
 
@@ -33,6 +34,7 @@ function App() {
           <SearchItem />
           <SpecialBanner />
           <DealsSection />
+          <ReviewSection />
         </div>
         <div className='bg-[#404040]  py-16 mt-28'>
           <FooterSection />
