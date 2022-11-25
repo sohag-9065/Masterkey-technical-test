@@ -6,6 +6,9 @@ import { createContext } from 'react';
 import Alexabanner from './components/Alexabanner/Alexabanner';
 import TodayDeal from './components/TodayDeal/TodayDeal';
 import SearchItem from './components/SearchItem/SearchItem';
+import SpecialBanner from './components/SpecialBanner/SpecialBanner';
+import DealsSection from './components/DealsSection/DealsSection';
+import FooterSection from './components/FooterSection/FooterSection';
 
 export const ProductsContext = createContext([])
 
@@ -21,12 +24,19 @@ function App() {
 
   return (
     <ProductsContext.Provider value={products}>
-      <div className='max-w-screen-2xl mx-auto '>
-        <Header />
-        <HotDealBanner />
-        <Alexabanner />
-        <TodayDeal />
-        <SearchItem />
+      <div>
+        <div className='max-w-screen-2xl mx-auto '>
+          <Header />
+          <HotDealBanner />
+          <Alexabanner />
+          <TodayDeal />
+          <SearchItem />
+          <SpecialBanner />
+          <DealsSection />
+        </div>
+        <div className='bg-[#404040]  py-16 mt-28'>
+          <FooterSection />
+        </div>
       </div>
     </ProductsContext.Provider>
 
